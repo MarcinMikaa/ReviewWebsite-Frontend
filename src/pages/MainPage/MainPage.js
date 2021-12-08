@@ -1,6 +1,6 @@
 import "./MainPage.css";
 
-function App() {
+function MainPage() {
   return (
     <div className="main-page">
       <h1>Main Page</h1>
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainPage;
