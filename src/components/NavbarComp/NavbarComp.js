@@ -5,20 +5,19 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 function NavbarComp() {
   return (
     <div className="navbar-comp">
-      <Navbar bg="white" expand="lg" fixed="top" className="navabr">
+      <Navbar bg="light" expand="lg" className="navabr">
         <Container fluid>
-          <Nav.Link as={Link} to="/register">
-            <p>Home</p>
+          <Nav.Link as={Link} to="/">
+            Home
           </Nav.Link>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll></Nav>
-            <Nav>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
               <Nav.Link as={Link} to="/register">
-                <p>Register</p>
+                Register
               </Nav.Link>
               <Nav.Link as={Link} to="/login">
-                <p>Login</p>
+                Login
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
