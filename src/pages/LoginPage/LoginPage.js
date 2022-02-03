@@ -22,6 +22,7 @@ function LoginPage() {
       if (res.data._id) {
         localStorage.setItem("user", JSON.stringify(res.data));
         navigate("/");
+        window.location.reload();
       }
     });
   };
