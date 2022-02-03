@@ -1,5 +1,5 @@
 import { Nav } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import AdminNav from "../AdminNav/AdminNav";
 import axios from "axios";
 import { useEffect } from "react";
