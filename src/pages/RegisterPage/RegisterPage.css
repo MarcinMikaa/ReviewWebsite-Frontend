@@ -4,6 +4,8 @@
   text-align: center;
   align-items: center;
   height: 100vh;
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
 
 .form-box {
@@ -27,6 +29,9 @@
   font-size: 1.2em;
   padding: 12px 40px;
   border: 0;
+  background-color: #9fa4c4;
+  background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+
 }
 
 .form-box button:hover {
