@@ -1,10 +1,33 @@
 import "./AddPage.css";
 import { Form, Button } from "react-bootstrap";
+import {useState} from "react";
+import axios from "axios";
 
 
 
 function AddPage() {
+  const [newTitle, setNewTitle] = useState("");
+  const [newContent, setNewContent] = useState("");
+  const [newDate, setNewDate] = useState("");
+  const [newGrade, setNewGrade] = useState("");
+  const [newUrl, setNewUrl] = useState("");
 
+  // test
+
+  const add = () => {
+    axios({
+      method: "POST",
+      data: {
+        title: newTitle,
+        content: newContent,
+        date: newDate,
+        grade: newGrade,
+        url: newUrl,
+      },
+      withCredentials: true,
+      url: "http://localhost:3000/add-review"
+    }).then((res) => {});
+  };
   return (
     <div className="add-page">
       <div className="form-box">
