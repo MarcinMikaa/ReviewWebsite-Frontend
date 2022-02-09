@@ -9,11 +9,9 @@ function NavbarComp() {
 
   return (
     <div className="navbar-comp">
-      <Navbar bg="light" expand="lg" className="navabr">
+      <Navbar expand="lg" sticky="top" variant="dark" bg="dark" className="navbar">
         <Container fluid>
-          <Nav.Link as={Link} to="/">
-            Home
-          </Nav.Link>
+          <Navbar.Brand as={Link} to="/" className="navbar-brand">Home</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll></Nav>

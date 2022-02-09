@@ -24,8 +24,8 @@ function LoggedUserNav() {
       withCredentials: true,
       url: "http://localhost:4000/logout",
     }).then((res) => {
-      localStorage.clear();
       navigate("/");
+      localStorage.clear();
       window.location.reload();
     });
   };
