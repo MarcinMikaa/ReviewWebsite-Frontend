@@ -3,7 +3,7 @@ import CarouselComp from "../../components/CarouselComp/CarouselComp";
 
 function MainPage() {
   return (
-    <div className="main-page">
+    <div className="main-page backgroundgi">
       <CarouselComp/>
     </div>
   );

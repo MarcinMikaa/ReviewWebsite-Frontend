@@ -28,7 +28,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="login-page">
+    <div className="login-page background">
       <div className="form-box">
         <Form>
           <svg
@@ -44,12 +44,12 @@ function LoginPage() {
               d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
             />
           </svg>
-          <h1>Login</h1>
+          <h1 className="header">Login</h1>
           <Form.Group className="mb-3" controlId="formGroupUsername">
-            <Form.Control type="text" placeholder="Username" onChange={(e) => setLoginUsername(e.target.value)} />
+            <Form.Control type="text" placeholder="Username" className="place" onChange={(e) => setLoginUsername(e.target.value)} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formGroupPassword">
-            <Form.Control type="password" placeholder="Password" onChange={(e) => setLoginPassword(e.target.value)} />
+            <Form.Control type="password" placeholder="Password" className="place" onChange={(e) => setLoginPassword(e.target.value)} />
           </Form.Group>
           <Button onClick={login}>Login</Button>
         </Form>

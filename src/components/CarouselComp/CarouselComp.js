@@ -11,21 +11,21 @@ function CarouselComp() {
         <Carousel.Item>
           <img className="carousel-image" src={mountain} alt="First slide"/>
           <Carousel.Caption>
-            <h2 className="carousel-header">First slide</h2>
+            <h2 className="carousel-header"></h2>
             <p></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="carousel-image" src={mountain2} alt="Second slide"/>
           <Carousel.Caption>
-            <h2 className="carousel-header">Second slide</h2>
+            <h2 className="carousel-header"></h2>
             <p></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="carousel-image" src={mountain3} alt="Third slide"/>
           <Carousel.Caption>
-            <h2 className="carousel-header">Third slide</h2>
+            <h2 className="carousel-header"></h2>
             <p></p>
           </Carousel.Caption>
         </Carousel.Item>
