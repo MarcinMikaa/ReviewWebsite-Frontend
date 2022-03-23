@@ -26,24 +26,24 @@ function AddPage() {
   };
 
   return (
-    <div className="add-page">
+    <div className="add-page background">
       <div className="form-box">
-        <h1>Add new review</h1>
+        <h1 className="header">Add new review</h1>
         <Form>
           <Form.Group className="mb-3" controlId="formGroupTitle">
-            <Form.Control type="text" placeholder="Title" onChange={(e) => setNewTitle(e.target.value)} />
+            <Form.Control type="text" placeholder="Title" className="place" onChange={(e) => setNewTitle(e.target.value)} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formGroupContent">
-            <Form.Control type="text" placeholder="Content" onChange={(e) => setNewContent(e.target.value)} />
+            <Form.Control type="text" placeholder="Content" className="place" onChange={(e) => setNewContent(e.target.value)}/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formGroupDate">
-            <Form.Control type="date" placeholder="Date" onChange={(e) => setNewDate(e.target.value)} />
+            <Form.Control type="date" placeholder="Date" className="place" onChange={(e) => setNewDate(e.target.value)}/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formGroupGrade">
-            <Form.Control type="number" placeholder="Grade" onChange={(e) => setNewGrade(e.target.value)} />
+            <Form.Control type="number" placeholder="Grade" className="place" onChange={(e) => setNewGrade(e.target.value)}/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formGroupUrl">
-            <Form.Control type="text" placeholder="Url" onChange={(e) => setNewUrl(e.target.value)} />
+            <Form.Control type="text" placeholder="Url" className="place" onChange={(e) => setNewUrl(e.target.value)}/>
           </Form.Group>
           <Button onClick={add}>Add</Button>
         </Form>

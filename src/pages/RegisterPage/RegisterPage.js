@@ -27,7 +27,7 @@ function RegisterPage() {
     });
   };
   return (
-    <div className="register-page">
+    <div className="register-page background">
       <div className="form-box">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -42,18 +42,19 @@ function RegisterPage() {
             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
           />
         </svg>
-        <h1>Register</h1>
+        <h1 className="header">Register</h1>
         <Form>
           <Form.Group className="mb-3" controlId="formGroupUsername">
-            <Form.Control type="text" placeholder="Username" onChange={(e) => setRegisterUsername(e.target.value)} />
+            <Form.Control type="text" placeholder="Username" className="place" onChange={(e) => setRegisterUsername(e.target.value)} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formGroupEmail">
-            <Form.Control type="email" placeholder="Email" onChange={(e) => setRegisterEmail(e.target.value)} />
+            <Form.Control type="email" placeholder="Email" className="place" onChange={(e) => setRegisterEmail(e.target.value)} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formGroupPassword">
             <Form.Control
               type="password"
               placeholder="Password"
+              className="place"
               onChange={(e) => setRegisterPassword(e.target.value)}
             />
           </Form.Group>
