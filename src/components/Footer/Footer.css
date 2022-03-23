@@ -1,0 +1,48 @@
+.footer {
+  background-color: rgb(44, 44, 44);
+  padding: 15px;
+  padding: 4vh 5vw;
+}
+
+.row {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-column p {
+  color: white;
+}
+
+.contact p {
+  cursor: pointer;
+}
+
+.d-inline-block {
+  max-width: 90%;
+}
+
+.copyrights p {
+  color: rgb(209, 205, 205);
+  padding-left: 24px;
+  margin: 0;
+}
+
+.nav {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footer .nav-link {
+    justify-content: center;
+  }
+
+  .contact {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .footer-image {
+    text-align: center;
+  }
+}
