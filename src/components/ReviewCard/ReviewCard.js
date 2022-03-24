@@ -8,17 +8,14 @@ function ReviewCard({ id, title, content, date, grade, url }) {
     <Col>
       <Card className="card-main">
         <div className="review-card-header">
-          <div className="date">
-            <Card.Text>{date}</Card.Text>
-          </div>
+          <Card.Text className="date">{date}</Card.Text>
           <Card.Title>{title}</Card.Title>
         </div>
         {/* <Card.Img variant="top" src={url} /> */}
-
-        <Card.Body>
+        <div className="review-card-content">
           <Card.Text>{content}</Card.Text>
           <Card.Text>{grade}</Card.Text>
-        </Card.Body>
+        </div>
       </Card>
     </Col>
   );

@@ -1,0 +1,15 @@
+.card-main {
+    padding: 40px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 10px rgb(184, 184, 184);
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.date {
+    text-align: right;
+}
+
+.Title {
+    font-weight: bold;
+}

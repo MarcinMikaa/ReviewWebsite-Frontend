@@ -1,9 +1,11 @@
 import "./AddPage.css";
 import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"
 import axios from "axios";
 
 function AddPage() {
+  const navigate = useNavigate();
   const [newTitle, setNewTitle] = useState("");
   const [newContent, setNewContent] = useState("");
   const [newDate, setNewDate] = useState("");
@@ -22,7 +24,9 @@ function AddPage() {
       },
       withCredentials: true,
       url: "http://localhost:4000/add-review",
-    }).then((res) => {});
+    }).then((res) => {
+      navigate("/")
+    });
   };
 
   return (
