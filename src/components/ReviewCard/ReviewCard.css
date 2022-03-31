@@ -13,3 +13,19 @@
 .Title {
     font-weight: bold;
 }
+
+.review-card-content .grade {
+    font-size: x-large;
+}
+
+.card-main hr {
+    margin-top: 50px;
+}
+
+.review-card-comment-section h2 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.review-card-comment-section h3 {
+    padding-bottom: 10px;}
