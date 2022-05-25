@@ -32,6 +32,10 @@ function MainPage() {
               id={reviews._id}
               title={reviews.title}
               content={reviews.content}
+              director={reviews.director}
+              scenario={reviews.scenario}
+              genre={reviews.genre}
+              production={reviews.production}
               date={reviews.date}
               grade={reviews.grade}
               url={reviews.url}

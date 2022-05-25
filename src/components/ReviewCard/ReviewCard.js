@@ -1,10 +1,10 @@
 import "./ReviewCard.css";
 import { Col, Card, Form, Button } from "react-bootstrap";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import userImg from "../../images/user.png";
 import axios from "axios";
 
-function ReviewCard({ id, title, content, date, grade, url, comments }) {
+function ReviewCard({ id, title, content, director, scenario, genre, production, date, grade, url, comments }) {
   const user = localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : null;
 
   const [newContent, setNewContent] = useState("");
@@ -19,7 +19,9 @@ function ReviewCard({ id, title, content, date, grade, url, comments }) {
       },
       withCredentials: true,
       url: "http://localhost:4000/add-comment",
-    }).then((res) => {});
+    }).then((res) => {
+      window.location.reload();
+    });
   };
 
   const formatDate = useCallback((date) => {
@@ -36,10 +38,22 @@ function ReviewCard({ id, title, content, date, grade, url, comments }) {
         <div className="review-card-header">
           <Card.Text className="date">{formatDate(date)}</Card.Text>
           <Card.Title>{title}</Card.Title>
-        </div>
-        {/* <Card.Img variant="top" src={url} /> */}
-        <div className="review-card-content">
           <Card.Text>{content}</Card.Text>
+        </div>
+        <Card.Img variant="top" src={url} />
+        <div className="review-card-content">
+          <Card.Text>
+            director <span className="details">{director}</span>
+          </Card.Text>
+          <Card.Text>
+            scenario <span className="details">{scenario}</span>
+          </Card.Text>
+          <Card.Text>
+            genre <span className="details">{genre}</span>
+          </Card.Text>
+          <Card.Text>
+            production <span className="details">{production}</span>
+          </Card.Text>
           <Card.Text className="grade">Grade: {grade}</Card.Text>
         </div>
         <hr />
