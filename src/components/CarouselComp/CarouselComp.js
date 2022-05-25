@@ -1,8 +1,8 @@
 import "./CarouselComp.css";
 import { Carousel } from "react-bootstrap";
-import mountain from "../../images/avengers.jpg";
-import mountain2 from "../../images/pitbull.jpg";
-import mountain3 from "../../images/auta.jpg";
+import mountain from "../../images/baner-uno.png";
+import mountain2 from "../../images/baner-dos.png";
+import mountain3 from "../../images/baner-tres.png";
 
 function CarouselComp() {
   return (
