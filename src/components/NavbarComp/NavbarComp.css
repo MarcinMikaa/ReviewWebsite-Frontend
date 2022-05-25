@@ -3,13 +3,17 @@
   font-size: 2rem !important;
 }
 
+.navbar {
+  border-bottom: 2px solid rgb(148, 148, 148);
+}
+
 .nav-link p {
   margin: 0 100px 0 0;
   transition: ease-in-out 0.3s;
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
-  color: rgb(150, 150, 150);
+  color: rgb(119, 119, 119);
 }
 
 .nav-link p:hover {

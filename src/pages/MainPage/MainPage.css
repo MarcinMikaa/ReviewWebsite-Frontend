@@ -1,6 +1,9 @@
+.main-page {
+  margin-top: 100px;
+}
 .page-container h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px;
 }

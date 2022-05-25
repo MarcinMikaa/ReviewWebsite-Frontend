@@ -10,7 +10,7 @@ function NavbarComp() {
 
   return (
     <div className="navbar-comp">
-      <Navbar expand="lg" sticky="top" variant="dark" bg="white" className="navbar">
+      <Navbar expand="lg" fixed="top" variant="dark" bg="light" className="navbar">
         <Container fluid>
           <Nav.Link as={Link} to="/">
             <img src={logo} alt="logo" height="70" />
