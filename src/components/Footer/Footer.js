@@ -1,5 +1,5 @@
 import "./Footer.css";
-// import logo from "../../images/logo.png";
+import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 import { Nav, Container, Row, Col } from "react-bootstrap";
 import AnonymousUserNav from "../AnonymousUserNav/AnonymousUserNav";
@@ -23,17 +23,17 @@ function Footer() {
           <Col md="4">
             <div className="contact">
               <h3>Contact</h3>
-              <p>reviews@gmail.com</p>
+              <p>moovie@gmail.com</p>
             </div>
           </Col>
           <Col md="4">
             <div className="footer-image">
-              <img className="d-inline-block align-top" alt="Logo" />
+              <img src={logo} className="d-inline-block align-top" alt="Logo" />
             </div>
           </Col>
         </Row>
         <div className="copyrights">
-          <p>Copyright © ........... 2022</p>
+          <p>Copyright © MOOVIE 2022</p>
         </div>
       </Container>
     </div>

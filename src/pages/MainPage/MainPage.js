@@ -16,6 +16,7 @@ function MainPage() {
       url: "http://localhost:4000/reviews",
     }).then((res) => {
       setReviews(res.data);
+      console.log(res.data);
     });
   }, []);
   return (
@@ -34,6 +35,7 @@ function MainPage() {
               date={reviews.date}
               grade={reviews.grade}
               url={reviews.url}
+              comments={reviews.comments}
             />
           </div>
         ))}

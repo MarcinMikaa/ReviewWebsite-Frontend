@@ -1,4 +1,5 @@
 import "./NavbarComp.css";
+import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import AnonymousUserNav from "../AnonymousUserNav/AnonymousUserNav.js";
@@ -9,9 +10,11 @@ function NavbarComp() {
 
   return (
     <div className="navbar-comp">
-      <Navbar expand="lg" sticky="top" variant="dark" bg="dark" className="navbar">
+      <Navbar expand="lg" sticky="top" variant="dark" bg="white" className="navbar">
         <Container fluid>
-          <Navbar.Brand as={Link} to="/" className="navbar-brand">Home</Navbar.Brand>
+          <Nav.Link as={Link} to="/">
+            <img src={logo} alt="logo" height="70" />
+          </Nav.Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll></Nav>

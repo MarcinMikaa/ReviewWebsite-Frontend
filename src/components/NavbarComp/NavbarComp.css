@@ -6,12 +6,12 @@
 .nav-link p {
   margin: 0 100px 0 0;
   transition: ease-in-out 0.3s;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   color: rgb(150, 150, 150);
 }
 
 .nav-link p:hover {
-  color: #fff;
+  color: rgb(41, 41, 41);
 }
