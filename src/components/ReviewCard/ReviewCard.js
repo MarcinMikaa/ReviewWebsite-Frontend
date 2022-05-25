@@ -1,6 +1,7 @@
 import "./ReviewCard.css";
 import { Col, Card, Form, Button } from "react-bootstrap";
 import { useState, useEffect, useCallback } from "react";
+import userImg from "../../images/user.png";
 import axios from "axios";
 
 function ReviewCard({ id, title, content, date, grade, url, comments }) {
@@ -43,14 +44,9 @@ function ReviewCard({ id, title, content, date, grade, url, comments }) {
         </div>
         <hr />
         <div className="review-card-comment-section">
-          <h3>Comments section</h3>
-
-          {comments.map((comments) => (
-            <div key={comments._id}>
-              <h3>{comments.user}</h3>
-              <p>{comments.content}</p>
-            </div>
-          ))}
+          <h2>
+            <b>Users opinions</b>
+          </h2>
 
           {user ? (
             <Form>
@@ -67,6 +63,16 @@ function ReviewCard({ id, title, content, date, grade, url, comments }) {
           ) : (
             <h2>Login to add a comment</h2>
           )}
+
+          {comments.map((comments) => (
+            <div key={comments._id} className="user-comment">
+              <div className="user-comp">
+                <img src={userImg} alt="user" height="40" />
+                <h3>{comments.user}</h3>
+              </div>
+              <p>{comments.content}</p>
+            </div>
+          ))}
         </div>
       </Card>
     </Col>

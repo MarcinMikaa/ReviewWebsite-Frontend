@@ -43,3 +43,39 @@ form button {
 form button:hover {
   box-shadow: 0 0 10px rgb(72, 141, 245);
 }
+
+.card-main .comment {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: #f7f7f7;
+}
+
+.card-main .user-comment {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: #ffffff;
+}
+
+.card-main img {
+  border-radius: 90px;
+}
+
+.card-main .user-comp {
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-main .user-comp h3 {
+  align-items: center;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+.card-main .user-comment p {
+  border-radius: 10px;
+  padding: 10px 25px;
+}
